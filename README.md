@@ -11,8 +11,8 @@ GPU:FP16（无量化）13 GB显存显卡
 首先拷贝仓库，之后安装requirements.txt指示的package，运行[chatglm6b.py](code/chatglm6b.py)修改prompt部分获得response。
 
 ```
-git clone https://huggingface.co/THUDM/chatglm-6b
-pip install -qr requirements.txt
+# git clone https://huggingface.co/THUDM/chatglm-6b
+# pip install -qr requirements.txt
 
 from transformers import AutoTokenizer, AutoModel
 tokenizer = AutoTokenizer.from_pretrained("THUDM/chatglm-6b", trust_remote_code=True)
