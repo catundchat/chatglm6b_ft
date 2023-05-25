@@ -26,7 +26,7 @@ print(response)
 
 GPU: Tesla T4，需选择最少6 GB显存显卡
 
-在线部署ChatGLM-6B的量化4等级模型，具体实现见[ChatGLM_6B_int4_Web_Demo.ipynb](code/ChatGLM_6B_int4_Web_Demo.ipynb)，[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-4UOCQtzX2OsdgbQOiukeX2r-wNCEJDC)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-4UOCQtzX2OsdgbQOiukeX2r-wNCEJDC) 在线部署ChatGLM-6B的量化4等级模型，具体实现见[ChatGLM_6B_int4_Web_Demo.ipynb](code/ChatGLM_6B_int4_Web_Demo.ipynb)
 
 生成界面如下：
 
