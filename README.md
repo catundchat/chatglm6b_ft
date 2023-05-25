@@ -31,3 +31,5 @@ GPU: Tesla T4，需选择最少6 GB显存显卡
 ![chatglm6b_colab_demo](photo/chatglm6b_colab_demo.JPG)
 
 ## 2.Fine-tuning
+
+一种平价的chatgpt实现方案，基于清华的 ChatGLM-6B + LoRA 进行finetune.
