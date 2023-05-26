@@ -48,13 +48,28 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 ### ②运行环境与代码
 
-具体参数：
-
 Colab GPU:A100 （显卡内存最少16GB）
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) File path: `code/chatglm_tuning.ipynb`
 
+LoRA微调核心代码：
+```
+model = ChatGLMForConditionalGeneration.from_pretrained(args.model_dir)
+config = LoraConfig(r=args.lora_r,
+                    lora_alpha=32,
+                    target_modules=["query_key_value"],
+                    lora_dropout=0.1,
+                    bias="none",
+                    task_type="CAUSAL_LM",
+                    inference_mode=False,
+                    )
+
+model = get_peft_model(model, config)
+```
+
 ### ③实验结果与分析
+
+保持基础模型性能的同时，对中文语境下特定任务或领域产生更高质量的回答。
 
 
 
