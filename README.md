@@ -48,7 +48,7 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 ### ②运行环境与代码
 
-Colab GPU:A100 （显卡内存最少16GB）
+Colab中运行使用GPU为A100，显卡内存最少16GB，V100为16GB显存偶现OOM(out of memory)
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) File path: `code/chatglm_tuning.ipynb`
 
@@ -81,7 +81,7 @@ model = get_peft_model(model, config)
 
 ### ③实验结果与分析
 
-保持基础模型性能的同时，对中文语境下特定任务或领域产生更高质量的回答。相较ChatGLM-6B微调前，微调后模型的BLEU-4，Rouge在上述验证集上的得分如下：
+相较ChatGLM-6B微调前，微调后模型的BLEU-4，Rouge在上述验证集上的得分如下：
 
 | Index    | Score      |
 | ------------- | ------------ |
@@ -91,6 +91,8 @@ model = get_peft_model(model, config)
 | Rouge-l    |   26.31(+2.30)  |
 
 index测试代码：`code/validation.py`
+
+保持基础模型性能的同时，对中文语境下特定任务或领域产生更高质量的回答。
 
 
 
