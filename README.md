@@ -61,6 +61,7 @@ training_args = TrainingArguments(
     learning_rate=2e-5,              # learning rate
     warmup_steps=500,                # number of warmup steps for learning rate scheduler
     weight_decay=0.01,               # strength of weight decay  
+)
 ```
 
 LoRA微调核心代码：
