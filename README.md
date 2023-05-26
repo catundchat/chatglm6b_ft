@@ -42,7 +42,9 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 ### ①数据集
 
-训练集: Alpaca指令微调数据集: `dataset/alpaca_en`, Alpaca中文翻译数据集：`dataset/alpaca-chinese-dataset-main`
+训练集: Alpaca指令微调数据集: `dataset/alpaca_en`, Alpaca中文翻译数据集：`dataset/alpaca-chinese-dataset-main` 
+
+训练集数据大概总共有15万条，在单卡A100上运行大概需要14小时。
 
 验证集：取Alibaba开源的DAMO_ConvAI中文数据集中的psychology部分：`dataset/DAMO_ConvAI`
 
