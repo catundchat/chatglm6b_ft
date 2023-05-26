@@ -52,6 +52,17 @@ Colab GPU:A100 （显卡内存最少16GB）
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) File path: `code/chatglm_tuning.ipynb`
 
+关键参数设置：
+```
+training_args = TrainingArguments(
+    num_train_epochs=3,              # total number of training epochs
+    per_device_train_batch_size=32,  # batch size per device during training
+    per_device_eval_batch_size=32,   # batch size for evaluation
+    learning_rate=2e-5,              # learning rate
+    warmup_steps=500,                # number of warmup steps for learning rate scheduler
+    weight_decay=0.01,               # strength of weight decay  
+```
+
 LoRA微调核心代码：
 ```
 model = ChatGLMForConditionalGeneration.from_pretrained(args.model_dir)
