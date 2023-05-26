@@ -44,7 +44,7 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 训练集: Alpaca指令微调数据集: `dataset/alpaca_en`, Alpaca中文翻译数据集：`dataset/alpaca-chinese-dataset-main`
 
-验证集：DAMO_ConvAI中文数据集：`dataset/DAMO_ConvAI`
+验证集：取Alibaba开源的DAMO_ConvAI中文数据集中的psychology部分：`dataset/DAMO_ConvAI`
 
 ### ②运行环境与代码
 
