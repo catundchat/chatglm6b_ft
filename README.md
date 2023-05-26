@@ -36,7 +36,7 @@ GPU: Tesla T4，需选择最少6 GB显存显卡
 
 ## 2.Fine-tuning
 
-一种平价的chatgpt实现方案，基于清华的 ChatGLM-6B + LoRA 进行finetune.
+基于清华的 ChatGLM-6B + LoRA 进行finetune
 
 LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的低阶适应，是一种PEFT（参数高效性微调方法）LoRA的基本原理是冻结预训练好的模型权重参数，在冻结原模型参数的情况下，通过往模型中加入额外的网络层，并只训练这些新增的网络层参数。由于这些新增参数数量较少，这样不仅 finetune 的成本显著下降，还能获得和全模型微调类似的效果。
 
