@@ -52,7 +52,7 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 Colab GPU:A100 （显卡内存最少16GB）
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) [chatglm_tuning.ipynb](code/chatglm_tuning.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) File path: `code/chatglm_tuning.ipynb`
 
 ### ③实验结果与分析
 
