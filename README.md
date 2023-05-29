@@ -104,7 +104,7 @@ model = get_peft_model(model, config)
 | Rouge-2  |  15.31(+2.07)  |
 | Rouge-l    |   26.31(+2.30)  |
 
-LoRA微调权重保存在`output/chatglm_lora.pt`，Index测试代码：`code/validation_cn.py`，合并权重见`code/load_weight.py`
+LoRA微调权重保存在`output/chatglm_lora.pt`，Index测试代码：`code/validation_cn.py`，合并权重见`code/load_weight.py`，英文示例见`code/chatglm-tuning.ipynb`
 
 实验结论：保持基础模型性能的同时，对中文语境下特定任务或领域产生更高质量的回答且未出现灾难性遗忘现象。
 
