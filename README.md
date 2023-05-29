@@ -44,15 +44,21 @@ LoRA: Low-Rank Adaptation of Large Language Models，直译为大语言模型的
 
 训练集: Alpaca指令微调数据集: `dataset/alpaca_en`, Alpaca中文翻译数据集：`dataset/alpaca-chinese-dataset-main` 
 
-训练集数据大概总共有15万条，在单卡A100上运行大概需要14小时。
+取训练集数据大概总共有15万条，在单卡A100上运行大概需要14小时。
 
 验证集：取Alibaba开源的DAMO_ConvAI中文数据集中的psychology部分：`dataset/DAMO_ConvAI`
 
-### ②运行环境与代码
+### ②运行环境(GPU RAM ≥ 24GB)
 
-Colab中运行使用GPU为A100，显卡内存最少16GB，V100为16GB显存偶现OOM(out of memory)
+| GPU in Colab    | 使用情况     |
+| ------------- | ------------ |
+| A100     |    ✔️    |
+| V100 | ❌ |
+| Tesla-T4  |  ❌ |
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1dH7QZyyzyG5YHw2FGFXpy3V8p0DxYucu#scrollTo=VLG3jYxUaZmg) File path: `code/chatglm_tuning.ipynb`
+
+### ③关键参数
 
 关键参数设置：
 ```
@@ -81,7 +87,7 @@ config = LoraConfig(r=args.lora_r,
 model = get_peft_model(model, config)
 ```
 
-### ③实验结果与分析
+### ④实验结果与分析
 
 相较ChatGLM-6B微调前，微调后模型的BLEU-4，Rouge在上述验证集上的得分如下：
 
